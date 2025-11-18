@@ -2,7 +2,7 @@
 using namespace std;
 
 int sum( vector<int>& nums, int k){
-    int sum = 0 ; 
+       int sum = 0 ; 
     int len = 0 ;
 
     int n = nums.size();
@@ -18,6 +18,7 @@ int sum( vector<int>& nums, int k){
     }
    
     return len;
+    
 }
 
 int main(){
