@@ -14,11 +14,9 @@ vector<int> rearrangeArray(vector<int>& nums) {
                 positive.push_back( nums[ i ]);
         }
         int i = 0 , pindex = 0, nindex = 0;
-        for( i = 0 ; i < n ;i++){
-            if( i % 2 == 0)
-                nums[ i ] = positive[ pindex++ ];
-            else
-                nums[ i ] = negative[ nindex++ ];
+        for( i = 0 ; i < n/2 ;i++){
+            nums[ i * 2] = positive[ i ];
+            nums[ i * 2 + 1 ] = negative[ i ];
         }
    
        return nums; 
